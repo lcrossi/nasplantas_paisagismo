@@ -1,3 +1,3 @@
 # NASPLANTAS PAISAGISMO
 #
-Landscape architecture website.
+Landscape design website.

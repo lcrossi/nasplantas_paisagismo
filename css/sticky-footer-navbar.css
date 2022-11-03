@@ -1,6 +1,6 @@
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
+  html {
     position: relative;
     min-height: 100%;
   }
@@ -34,4 +34,8 @@ html {
   
   code {
     font-size: 80%;
+  }
+
+  .logo {
+    width: 82px;
   }
