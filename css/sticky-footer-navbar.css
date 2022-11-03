@@ -36,6 +36,38 @@
     font-size: 80%;
   }
 
+  h2 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  p {
+    line-height: 150%;
+    font-size: 18px;
+    color: #000;
+  }
+
+  p.p_home {
+    margin-top: 32px;
+  }
+
+  .texto_home {
+    background-color: white;
+    font-size: 48px;
+    margin-top: 200px;
+    padding: 32px;
+    max-width: 530px;
+    opacity: 0.7;
+  }
+
+  .img_home {
+    background-image: url("../img/bg_home.jpg");
+    background-position: center;
+    height: 600px;
+    margin-top: 100px;
+    margin-bottom: 36px;
+  }
+
   .navbar-default {
     background-color: white;
     height: 100px;
@@ -122,7 +154,7 @@
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
       border: none;
     }
-    
+
     footer {
       height: 600px;
     }
