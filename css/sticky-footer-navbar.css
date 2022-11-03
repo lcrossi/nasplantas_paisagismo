@@ -53,10 +53,10 @@
 
   .texto_home {
     background-color: white;
-    font-size: 48px;
+    font-size: 44px;
     margin-top: 200px;
     padding: 32px;
-    max-width: 530px;
+    max-width: 490px;
     opacity: 0.7;
   }
 
@@ -66,6 +66,7 @@
     height: 600px;
     margin-top: 100px;
     margin-bottom: 36px;
+    background-size: cover; /* Foi add por mim e fica melhor a resolução...*/
   }
 
   .navbar-default {
