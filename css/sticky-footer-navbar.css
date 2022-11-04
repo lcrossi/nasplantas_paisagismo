@@ -23,6 +23,11 @@
   body > .container {
     padding: 0px 15px 80px;
   }
+
+  .distancia_menu {
+    padding-top: 156px !important;
+  }
+
   .container .text-muted {
     margin: 20px 0;
   }
@@ -34,6 +39,11 @@
   
   code {
     font-size: 80%;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
   }
 
   h2 {
@@ -182,3 +192,20 @@
       margin-bottom: 600px; /* Margin bottom by footer height */
     }
   }
+
+  /* Pagina contato */
+  .h1_contato {
+    text-align: center;
+  }
+
+  .contato_destaque h3 {
+    color: rgb(84, 84, 84);
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .contato_destaque p {
+    font-size: 24px;
+  }
+
+  
