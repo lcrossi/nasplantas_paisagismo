@@ -247,6 +247,16 @@
     .contato_horario p {
       font-size: 18px !important;
     }
+
+    .container_form_contato input[type=text], 
+    .container_form_contato input[type=email] {
+      width: 100%;
+    }
+
+    .container_form_contato input[type=email] {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
   }
 
 
@@ -281,3 +291,10 @@
   }
 
 
+  /* Desktop Médio */
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .container_form_contato input[type=text], 
+    .container_form_contato input[type=email] {
+      width: 215px;
+    }
+  }
