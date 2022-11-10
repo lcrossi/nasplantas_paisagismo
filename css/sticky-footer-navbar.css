@@ -224,6 +224,24 @@
   }
 
 
+  /* Trabalhos */
+  .trabalhos_selector h3 {
+    font-size: 20px;
+  }
+
+  .trabalhos_selector h3:hover {
+    color: aquamarine;
+    cursor: pointer;
+  }
+
+  .img_trabalhos {
+    width: 100%;
+  }
+
+  .hide {
+    display: none !important;
+  }
+
 
 
   /* Smartphone */
