@@ -156,5 +156,48 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+        function showImgs(selected) {
+            if(selected=='comercial') {
+                document.querySelectorAll(".img-trabalhos-comercial").forEach(
+                    img => img.classList.toggle('hide', false)
+                )
+
+                document.querySelectorAll(".img-trabalhos-residencial").forEach(
+                    img => img.classList.toggle('hide', true)
+                )
+
+                document.querySelectorAll(".img-trabalhos-publico").forEach(
+                    img => img.classList.toggle('hide', true)
+                )
+            }
+            if(selected=='publico') {
+                document.querySelectorAll(".img-trabalhos-comercial").forEach(
+                    img => img.classList.toggle('hide', true)
+                )
+
+                document.querySelectorAll(".img-trabalhos-residencial").forEach(
+                    img => img.classList.toggle('hide', true)
+                )
+
+                document.querySelectorAll(".img-trabalhos-publico").forEach(
+                    img => img.classList.toggle('hide', false)
+                )
+            }
+            if(selected=='residencial') {
+                document.querySelectorAll(".img-trabalhos-comercial").forEach(
+                    img => img.classList.toggle('hide', true)
+                )
+
+                document.querySelectorAll(".img-trabalhos-residencial").forEach(
+                    img => img.classList.toggle('hide', false)
+                )
+
+                document.querySelectorAll(".img-trabalhos-publico").forEach(
+                    img => img.classList.toggle('hide', true)
+                )
+            }
+        }
+    </script>
   </body>
 </html>

@@ -152,6 +152,8 @@
     font-size: 32px;
   }
 
+  
+
   /* Pagina contato */
   .h1_contato {
     text-align: center;
@@ -218,13 +220,20 @@
   }
 
 
+
   /* Parceiros */
   .img_parceiros {
     width: 100%;
+    margin: 20px 0px;
   }
 
 
+
   /* Trabalhos */
+  .trabalhos_selector {
+    margin: 28px 0px;
+  }
+
   .trabalhos_selector h3 {
     font-size: 20px;
   }
@@ -236,6 +245,7 @@
 
   .img_trabalhos {
     width: 100%;
+    margin: 20px 0px;
   }
 
   .hide {
@@ -282,10 +292,6 @@
     .container_form_contato input[type=email] {
       margin-left: 0px;
       margin-right: 0px;
-    }
-
-    .img_parceiros {
-      margin: 20px 0px;
     }
   }
 
