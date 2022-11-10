@@ -218,6 +218,14 @@
   }
 
 
+  /* Parceiros */
+  .img_parceiros {
+    width: 100%;
+  }
+
+
+
+
   /* Smartphone */
   .navbar-header .navbar-toggle  {
     margin-top: 32px;
@@ -256,6 +264,10 @@
     .container_form_contato input[type=email] {
       margin-left: 0px;
       margin-right: 0px;
+    }
+
+    .img_parceiros {
+      margin: 20px 0px;
     }
   }
 
