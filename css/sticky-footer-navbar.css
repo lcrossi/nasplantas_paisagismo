@@ -252,6 +252,25 @@
     display: none !important;
   }
 
+  .trabalho_detalhe {
+    margin: 72px 0px;
+  }
+
+  #nome_trabalho {
+    text-align: left;
+    color: rgb(163, 162, 162);
+  }
+
+  #info_trabalho {
+    text-align: right;
+    color: rgb(163, 163, 163);
+  }
+
+  .texto_trabalhos_detalhe {
+    margin-top: 20px;
+    text-align: left;
+  }
+
 
 
   /* Smartphone */
