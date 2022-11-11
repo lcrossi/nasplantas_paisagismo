@@ -77,39 +77,39 @@
         </div>
         <div class="row" id="container-trabalhos-imgs">
             <div class="col-md-4 img-trabalhos-comercial">
-                <img class="img_trabalhos" onclick="onSelectTrabalho('Comercial', 'trab-C-1')" src="img/foto.png">
+                <img class="img_trabalhos" onclick="selecionarTrabalho('Comercial', 'trab-C-1')" src="img/foto.png">
             </div>
             
             <div class="col-md-4 img-trabalhos-comercial">
-                <img class="img_trabalhos" onclick="onSelectTrabalho('Comercial', 'trab-C-2')" src="img/foto.png">
+                <img class="img_trabalhos" onclick="selecionarTrabalho('Comercial', 'trab-C-2')" src="img/foto.png">
             </div>
             
             <div class="col-md-4 img-trabalhos-comercial">
-                <img class="img_trabalhos" onclick="onSelectTrabalho('Comercial', 'trab-C-3')" src="img/foto.png">
+                <img class="img_trabalhos" onclick="selecionarTrabalho('Comercial', 'trab-C-3')" src="img/foto.png">
             </div>
             
             <div class="col-md-4 img-trabalhos-publico">
-                <img class="img_trabalhos" onclick="onSelectTrabalho('Publico', 'trab-P-1')" src="img/foto.png">
+                <img class="img_trabalhos" onclick="selecionarTrabalho('Publico', 'trab-P-1')" src="img/foto.png">
             </div>
 
             <div class="col-md-4 img-trabalhos-publico">
-                <img class="img_trabalhos" onclick="onSelectTrabalho('Publico', 'trab-P-2')" src="img/foto.png">
+                <img class="img_trabalhos" onclick="selecionarTrabalho('Publico', 'trab-P-2')" src="img/foto.png">
             </div>
             
             <div class="col-md-4 img-trabalhos-residencial">
-                <img class="img_trabalhos" onclick="onSelectTrabalho('Residencial', 'trab-R-1')" src="img/foto.png">
+                <img class="img_trabalhos" onclick="selecionarTrabalho('Residencial', 'trab-R-1')" src="img/foto.png">
             </div>
 
             <div class="col-md-4 img-trabalhos-residencial">
-                <img class="img_trabalhos" onclick="onSelectTrabalho('Residencial', 'trab-R-2')" src="img/foto.png">
+                <img class="img_trabalhos" onclick="selecionarTrabalho('Residencial', 'trab-R-2')" src="img/foto.png">
             </div>
 
             <div class="col-md-4 img-trabalhos-residencial">
-                <img class="img_trabalhos" onclick="onSelectTrabalho('Residencial', 'trab-R-3')" src="img/foto.png">
+                <img class="img_trabalhos" onclick="selecionarTrabalho('Residencial', 'trab-R-3')" src="img/foto.png">
             </div>
 
             <div class="col-md-4 img-trabalhos-residencial">
-                <img class="img_trabalhos" onclick="onSelectTrabalho('Residencial', 'trab-R-4')" src="img/foto.png">
+                <img class="img_trabalhos" onclick="selecionarTrabalho('Residencial', 'trab-R-4')" src="img/foto.png">
             </div>
         </div>
         <div class="row trabalho_detalhe">
@@ -164,7 +164,7 @@
                     </a>
                   </div>
             </div>
-            <div class="col-md-6 texto_trabalhos_detalhe" id="info_trabalho">
+            <div class="col-md-6 texto_trabalhos_detalhe" id="descricao_trabalho">
                 Descrição em detalhes do trabalho. 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at tortor 
                 vel leo vulputate euismod. Cras a bibendum lacus, non lobortis lorem. Nam sem mauris, 
@@ -258,6 +258,45 @@
                     img => img.classList.toggle('hide', true)
                 )
             }
+        }
+
+        function selecionarTrabalho(type, item) {
+            var trabalho_nome = document.getElementById('nome_trabalho')
+            var trabalho_info = document.getElementById('info_trabalho')
+            var trabalho_descricao = document.getElementById('descricao_trabalho')
+            var carousel_list = document.getElementById('carousel-trabalhos-detalhes-listbox')
+
+            switch (type) {
+                case 'Comercial': {
+                    console.log(item)
+                    trabalho_nome.innerText = 'Nome trabalho comercial'
+                    trabalho_info.innerText = 'Área 1.200m2 | Ano 2021 | SP'
+                    trabalho_descricao.innerText = 'Descrição super detalhada do projeto comercial, dados: Área 1.200m &sup2; | Ano 2021 | SP Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at tortor vel leo vulputate euismod.'
+                    
+
+                    var item_imagem1 = document.createElement("div")
+                    item_imagem1.className = "item active"
+                    item_imagem1.innerHTML = '<img src="img/foto.png" alt="Imagem 1"><div class="carousel-caption">Imagem 1</div>'
+                    var item_imagem2 = document.createElement("div")
+                    item_imagem2.className = "item"
+                    item_imagem2.innerHTML = '<img src="img/foto.png" alt="Imagem 2"><div class="carousel-caption">Imagem 2</div>'
+
+                    carousel_list.innerHTML = ""
+                    carousel_list.appendChild(item_imagem1)
+                    carousel_list.appendChild(item_imagem2)
+                }
+                    break;
+                case 'Publico': {
+                    console.log('pbc')
+                    console.log('Comercial2')
+                }
+                    break;
+                case 'Residencial': {
+                    console.log('res')
+                    console.log('res2')
+                }
+            }
+            
         }
     </script>
   </body>
